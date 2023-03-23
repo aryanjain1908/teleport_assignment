@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Delete Blog </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">          
+    </head>
+    <body></br></br></br></br></br>
+        <div align="center">
+          <div align="center" class="border">
+             <div class="header">
+                <h1 class="word">Delete Blog</h1>
+             </div></br></br></br>
+            <h2 class="word">
+                <form action="{{ url_for('delete_blog') }}" method="post">
+                  <div class="msg">{{ msg }}</div>
+                    <input id="id" name="id" type="text" placeholder="Enter Blog Id" class="textbox"/></br></br></br>
+                    <input type="submit" class="btn" value="Delete"></br></br>
+                </form>
+            </h2>
+          </div>
+        </div>
+    </body>
+</html>

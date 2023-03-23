@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Blogs</title>
+    </head>
+    <body>
+        {% for blog in blogs %}
+        <h2>Title : {{ blogs[blog][0] }}</h2>
+        <h3>Id : {{ blog }}</h3>
+        <p>Description : {{ blogs[blog][1] }}</p></br></br><hr>
+        {% endfor %}
+        </br>
+    </body>
+</html>
